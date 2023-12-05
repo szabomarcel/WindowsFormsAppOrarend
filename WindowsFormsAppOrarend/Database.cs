@@ -50,16 +50,16 @@ namespace WindowsFormsAppOrarend
                 connection.Close();
             }
         }
-        public List<Modifycation> getModiy()
+        public List<Ora> getModiy()
         {
             nyit();
-            List<Modifycation> modositas = new List<Modifycation>();
+            List<Ora> modositas = new List<Ora>();
             command.CommandText = "SELECT `oraid`,`tantargy`,`sorszam`,`hetnap` FROM `orak` WHERE 1 ORDER BY tanarnev";
             using (MySqlDataReader dr = command.ExecuteReader())
             {
                 while(dr.Read())
                 {
-                    modositas.Add(new Modifycation(dr.GetInt32("oraid"), dr.GetString("tantargy"), dr.GetInt32("sorszam"), dr.GetInt32("hetnap")));
+                    modositas.Add(new Ora(dr.GetInt32("oraid"), dr.GetString("tantargy"), dr.GetInt32("sorszam"), dr.GetInt32("hetnap")));
                 }
             }
             zar();

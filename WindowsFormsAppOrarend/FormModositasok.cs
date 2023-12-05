@@ -13,7 +13,7 @@ namespace WindowsFormsAppOrarend
     public partial class FormModositasok : Form
     {
         string modify = null;
-        Modifycation kivalasztasModify = null;
+        Ora kivalasztasModify = null;
         public FormModositasok(string modify)
         {
             InitializeComponent();

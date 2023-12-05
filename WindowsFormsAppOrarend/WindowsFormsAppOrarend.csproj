@@ -123,6 +123,7 @@
     <Compile Include="FormOrak.Designer.cs">
       <DependentUpon>FormOrak.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ora.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormModositasok.resx">
