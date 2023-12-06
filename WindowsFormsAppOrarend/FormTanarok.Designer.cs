@@ -73,7 +73,7 @@
             // 
             // button_belep
             // 
-            this.button_belep.BackColor = System.Drawing.Color.Lime;
+            this.button_belep.BackColor = System.Drawing.Color.Olive;
             this.button_belep.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_belep.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button_belep.Location = new System.Drawing.Point(12, 68);
@@ -86,7 +86,7 @@
             // 
             // button_register
             // 
-            this.button_register.BackColor = System.Drawing.Color.Red;
+            this.button_register.BackColor = System.Drawing.Color.Sienna;
             this.button_register.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_register.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button_register.Location = new System.Drawing.Point(118, 68);
@@ -101,7 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
+            this.BackColor = System.Drawing.Color.YellowGreen;
             this.ClientSize = new System.Drawing.Size(231, 104);
             this.Controls.Add(this.button_register);
             this.Controls.Add(this.label1);

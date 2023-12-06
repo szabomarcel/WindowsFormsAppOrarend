@@ -50,7 +50,7 @@ namespace WindowsFormsAppOrarend
                 connection.Close();
             }
         }
-        public List<Ora> getModiy()
+        public List<Ora> getModify()
         {
             nyit();
             List<Ora> modositas = new List<Ora>();
@@ -59,7 +59,7 @@ namespace WindowsFormsAppOrarend
             {
                 while(dr.Read())
                 {
-                    modositas.Add(new Ora(dr.GetInt32("oraid"), dr.GetString("tantargy"), dr.GetInt32("sorszam"), dr.GetInt32("hetnap")));
+                    modositas.Add(new Ora(dr.GetInt32("oraid"), dr.GetString("tantargy"), dr.GetInt32("sorszam"), dr.GetString("hetnap")));
                 }
             }
             zar();
@@ -67,8 +67,18 @@ namespace WindowsFormsAppOrarend
         }
         public int validUser(string username, string password)
         {
-            int result = 0;
+            int userid = -1;
             command.CommandText = "SELECT tanarok.jelszo, tanatok.tanarid FROM tanarok WHERE tanarok.tanarnev=@tanarnev";
+            command.Parameters.Clear();
+            command.Parameters.AddWithValue("@nev", textBox_nev.Text);
+            MySqlDataReader reader = Program.command.ExecuteReader();
+            if (reader.Read())
+            {
+                string taroltJelszo = reader.GetString("jelszo");
+                Program.UserId = reader.GetInt32("vasarlo");
+            }
+            zar();
+            return userid;
         }
     }
 }

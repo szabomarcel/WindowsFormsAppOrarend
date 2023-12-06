@@ -38,7 +38,8 @@
             // 
             // buttonRegister
             // 
-            this.buttonRegister.BackColor = System.Drawing.Color.RosyBrown;
+            this.buttonRegister.BackColor = System.Drawing.Color.Olive;
+            this.buttonRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonRegister.Location = new System.Drawing.Point(12, 61);
             this.buttonRegister.Name = "buttonRegister";
@@ -88,7 +89,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSalmon;
+            this.BackColor = System.Drawing.Color.YellowGreen;
             this.ClientSize = new System.Drawing.Size(303, 101);
             this.Controls.Add(this.textBoxjelszo);
             this.Controls.Add(this.textBoxnev);

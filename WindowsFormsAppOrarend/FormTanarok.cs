@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,10 +20,12 @@ namespace WindowsFormsAppOrarend
 
         private void button_register_Click(object sender, EventArgs e)
         {
+            FormRegister register = new FormRegister();
             if (Program.db.validUser(textBoxnev.Text, textBoxjelszo.Text) >= 0)
             {
                 Program.formRegister.Show();
             }
+            register.Show();
         }
 
         private void button_belep_Click(object sender, EventArgs e)
