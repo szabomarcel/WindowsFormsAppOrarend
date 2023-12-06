@@ -44,8 +44,9 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.comboBoxHetnap = new System.Windows.Forms.ComboBox();
             this.textBoxOra = new System.Windows.Forms.TextBox();
-            this.textBoxTantargy = new System.Windows.Forms.TextBox();
             this.buttonIgenyles = new System.Windows.Forms.Button();
+            this.comboBoxTantargy = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSorszam)).BeginInit();
             this.SuspendLayout();
@@ -54,9 +55,9 @@
             // 
             this.listBoxTanarok.Cursor = System.Windows.Forms.Cursors.Hand;
             this.listBoxTanarok.FormattingEnabled = true;
-            this.listBoxTanarok.Location = new System.Drawing.Point(12, 27);
+            this.listBoxTanarok.Location = new System.Drawing.Point(12, 98);
             this.listBoxTanarok.Name = "listBoxTanarok";
-            this.listBoxTanarok.Size = new System.Drawing.Size(459, 121);
+            this.listBoxTanarok.Size = new System.Drawing.Size(459, 108);
             this.listBoxTanarok.TabIndex = 0;
             this.listBoxTanarok.SelectedIndexChanged += new System.EventHandler(this.listBoxTanarok_SelectedIndexChanged);
             // 
@@ -85,7 +86,7 @@
             // 
             this.újToolStripMenuItem.BackColor = System.Drawing.Color.Chartreuse;
             this.újToolStripMenuItem.Name = "újToolStripMenuItem";
-            this.újToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.újToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.újToolStripMenuItem.Text = "Új";
             this.újToolStripMenuItem.Click += new System.EventHandler(this.újToolStripMenuItem_Click);
             // 
@@ -93,7 +94,7 @@
             // 
             this.modósításToolStripMenuItem.BackColor = System.Drawing.Color.AliceBlue;
             this.modósításToolStripMenuItem.Name = "modósításToolStripMenuItem";
-            this.modósításToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modósításToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.modósításToolStripMenuItem.Text = "Modósítás";
             this.modósításToolStripMenuItem.Click += new System.EventHandler(this.modósításToolStripMenuItem_Click);
             // 
@@ -101,7 +102,7 @@
             // 
             this.törlésToolStripMenuItem.BackColor = System.Drawing.Color.Crimson;
             this.törlésToolStripMenuItem.Name = "törlésToolStripMenuItem";
-            this.törlésToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.törlésToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.törlésToolStripMenuItem.Text = "Törlés";
             this.törlésToolStripMenuItem.Click += new System.EventHandler(this.törlésToolStripMenuItem_Click);
             // 
@@ -109,7 +110,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(12, 151);
+            this.label1.Location = new System.Drawing.Point(8, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 20);
             this.label1.TabIndex = 2;
@@ -119,7 +120,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(114, 151);
+            this.label2.Location = new System.Drawing.Point(220, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 20);
             this.label2.TabIndex = 3;
@@ -129,7 +130,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(220, 151);
+            this.label3.Location = new System.Drawing.Point(93, 24);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 20);
             this.label3.TabIndex = 4;
@@ -139,7 +140,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(346, 150);
+            this.label4.Location = new System.Drawing.Point(346, 24);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 20);
             this.label4.TabIndex = 5;
@@ -147,32 +148,33 @@
             // 
             // numericUpDownSorszam
             // 
-            this.numericUpDownSorszam.Location = new System.Drawing.Point(224, 174);
+            this.numericUpDownSorszam.Location = new System.Drawing.Point(97, 47);
+            this.numericUpDownSorszam.Maximum = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
             this.numericUpDownSorszam.Name = "numericUpDownSorszam";
             this.numericUpDownSorszam.Size = new System.Drawing.Size(120, 20);
             this.numericUpDownSorszam.TabIndex = 6;
+            this.numericUpDownSorszam.ValueChanged += new System.EventHandler(this.numericUpDownSorszam_ValueChanged);
             // 
             // comboBoxHetnap
             // 
             this.comboBoxHetnap.FormattingEnabled = true;
-            this.comboBoxHetnap.Location = new System.Drawing.Point(350, 173);
+            this.comboBoxHetnap.Location = new System.Drawing.Point(350, 47);
             this.comboBoxHetnap.Name = "comboBoxHetnap";
             this.comboBoxHetnap.Size = new System.Drawing.Size(121, 21);
             this.comboBoxHetnap.TabIndex = 7;
+            this.comboBoxHetnap.SelectedIndexChanged += new System.EventHandler(this.comboBoxHetnap_SelectedIndexChanged);
             // 
             // textBoxOra
             // 
-            this.textBoxOra.Location = new System.Drawing.Point(12, 174);
+            this.textBoxOra.Location = new System.Drawing.Point(12, 47);
             this.textBoxOra.Name = "textBoxOra";
-            this.textBoxOra.Size = new System.Drawing.Size(100, 20);
+            this.textBoxOra.Size = new System.Drawing.Size(79, 20);
             this.textBoxOra.TabIndex = 8;
-            // 
-            // textBoxTantargy
-            // 
-            this.textBoxTantargy.Location = new System.Drawing.Point(118, 174);
-            this.textBoxTantargy.Name = "textBoxTantargy";
-            this.textBoxTantargy.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTantargy.TabIndex = 9;
+            this.textBoxOra.TextChanged += new System.EventHandler(this.textBoxOra_TextChanged);
             // 
             // buttonIgenyles
             // 
@@ -187,14 +189,34 @@
             this.buttonIgenyles.UseVisualStyleBackColor = false;
             this.buttonIgenyles.Click += new System.EventHandler(this.buttonIgenyles_Click);
             // 
+            // comboBoxTantargy
+            // 
+            this.comboBoxTantargy.FormattingEnabled = true;
+            this.comboBoxTantargy.Location = new System.Drawing.Point(224, 46);
+            this.comboBoxTantargy.Name = "comboBoxTantargy";
+            this.comboBoxTantargy.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxTantargy.TabIndex = 11;
+            this.comboBoxTantargy.SelectedIndexChanged += new System.EventHandler(this.comboBoxTantargy_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label5.Location = new System.Drawing.Point(12, 74);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(168, 20);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Kíválasztott lehetőség:";
+            // 
             // FormOrak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.YellowGreen;
             this.ClientSize = new System.Drawing.Size(483, 264);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.comboBoxTantargy);
             this.Controls.Add(this.buttonIgenyles);
-            this.Controls.Add(this.textBoxTantargy);
             this.Controls.Add(this.textBoxOra);
             this.Controls.Add(this.comboBoxHetnap);
             this.Controls.Add(this.numericUpDownSorszam);
@@ -232,7 +254,8 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ComboBox comboBoxHetnap;
         private System.Windows.Forms.TextBox textBoxOra;
-        private System.Windows.Forms.TextBox textBoxTantargy;
         private System.Windows.Forms.Button buttonIgenyles;
+        private System.Windows.Forms.ComboBox comboBoxTantargy;
+        private System.Windows.Forms.Label label5;
     }
 }
