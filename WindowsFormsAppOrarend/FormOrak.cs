@@ -43,11 +43,11 @@ namespace WindowsFormsAppOrarend
             }
             Ora kivalasztottTanarok = (Ora)listBoxTanarok.SelectedItem;
             textBoxOra.Text = kivalasztottTanarok.oraid.ToString();
-            textBoxTantargy.Text = kivalasztottTanarok.tantargy;
-            numericUpDownSorszam.Value = kivalasztottTanarok.sorszam;
-            numericUpDownSorszam.Maximum = kivalasztottTanarok.sorszam;
+            textBoxTantargy.Text = kivalasztottTanarok.tantargy; // listboxba át alakítás
+            numericUpDownSorszam.Value = kivalasztottTanarok.sorszam; // listboxba át alakítás
+            numericUpDownSorszam.Maximum = kivalasztottTanarok.sorszam; // listboxba át alakítás
             numericUpDownSorszam.Value = -1;
-            comboBoxHetnap.Text = kivalasztottTanarok.hetnapja;
+            comboBoxHetnap.Text = kivalasztottTanarok.hetnapja; // listboxba át alakítás 
         }
 
         private void buttonIgenyles_Click(object sender, EventArgs e)
